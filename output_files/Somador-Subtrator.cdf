@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEBA4F23) Path("C:/Users/15522341/Desktop/somador subtrator/output_files/") File("Somador-Subtrator.sof") MfrSpec(OpMask(1));
+		Device PartName(5CEBA4F23) Path("C:/Users/15522341/Desktop/somador-subtrator/output_files/") File("Somador-Subtrator.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
