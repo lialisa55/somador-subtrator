@@ -50,6 +50,7 @@ OB6 <= display_de_segmentos:inst9.6
 14 <= display_de_segmentos:inst32.4
 15 <= display_de_segmentos:inst32.5
 16 <= display_de_segmentos:inst32.6
+sinalResultado <= somador_completo:inst30.CarryOut
 
 
 |Somador-Subtrator|display_de_segmentos:inst8

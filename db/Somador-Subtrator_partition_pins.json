@@ -96,11 +96,31 @@
 					"strict" : false
 				},
 				{
-					"name" : "16",
+					"name" : "10",
 					"strict" : false
 				},
 				{
-					"name" : "A1",
+					"name" : "13",
+					"strict" : false
+				},
+				{
+					"name" : "14",
+					"strict" : false
+				},
+				{
+					"name" : "15",
+					"strict" : false
+				},
+				{
+					"name" : "sinalResultado",
+					"strict" : false
+				},
+				{
+					"name" : "B0",
+					"strict" : false
+				},
+				{
+					"name" : "A0",
 					"strict" : false
 				},
 				{
@@ -112,11 +132,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "A0",
+					"name" : "A3",
 					"strict" : false
 				},
 				{
-					"name" : "B1",
+					"name" : "A2",
+					"strict" : false
+				},
+				{
+					"name" : "A1",
 					"strict" : false
 				},
 				{
@@ -124,15 +148,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "B0",
-					"strict" : false
-				},
-				{
-					"name" : "A3",
-					"strict" : false
-				},
-				{
-					"name" : "A2",
+					"name" : "B1",
 					"strict" : false
 				},
 				{
