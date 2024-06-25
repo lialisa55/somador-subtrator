@@ -66,7 +66,6 @@ set_location_assignment PIN_V13 -to B1
 set_location_assignment PIN_T13 -to B2
 set_location_assignment PIN_T12 -to B3
 set_location_assignment PIN_U21 -to 0
-set_location_assignment PIN_U22 -to sinalResultado
 set_location_assignment PIN_Y20 -to OA1
 set_location_assignment PIN_V20 -to OA2
 set_location_assignment PIN_U16 -to OA3
@@ -85,4 +84,11 @@ set_location_assignment PIN_V19 -to sinalB
 set_location_assignment PIN_U20 -to OA0
 set_location_assignment PIN_AA15 -to posnegB
 set_location_assignment PIN_AB12 -to posnegA
+set_location_assignment PIN_AB20 -to 11
+set_location_assignment PIN_AA19 -to 12
+set_location_assignment PIN_AA18 -to 13
+set_location_assignment PIN_AB18 -to 14
+set_location_assignment PIN_AA17 -to 15
+set_location_assignment PIN_U22 -to 16
+set_location_assignment PIN_AA20 -to 10
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

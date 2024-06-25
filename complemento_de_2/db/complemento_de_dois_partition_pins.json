@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "OA",
+					"strict" : false
+				},
+				{
+					"name" : "BO",
+					"strict" : false
+				},
+				{
+					"name" : "CO",
+					"strict" : false
+				},
+				{
+					"name" : "DO",
+					"strict" : false
+				},
+				{
+					"name" : "EO",
+					"strict" : false
+				},
+				{
+					"name" : "FO",
+					"strict" : false
+				},
+				{
+					"name" : "A",
+					"strict" : false
+				},
+				{
+					"name" : "CarryIn",
+					"strict" : false
+				},
+				{
+					"name" : "B",
+					"strict" : false
+				},
+				{
+					"name" : "C",
+					"strict" : false
+				},
+				{
+					"name" : "D",
+					"strict" : false
+				},
+				{
+					"name" : "E",
+					"strict" : false
+				},
+				{
+					"name" : "F",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

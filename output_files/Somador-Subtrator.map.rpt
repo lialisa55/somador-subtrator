@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Somador-Subtrator
-Fri Jun 21 20:26:51 2024
+Mon Jun 24 21:08:17 2024
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Jun 21 20:26:51 2024       ;
+; Analysis & Synthesis Status     ; Successful - Mon Jun 24 21:08:17 2024       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; Somador-Subtrator                           ;
 ; Top-level Entity Name           ; Somador-Subtrator                           ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 34                                          ;
+; Total pins                      ; 41                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -173,6 +173,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------+---------+
 ; Somador-Subtrator.bdf            ; yes             ; User Block Diagram/Schematic File        ; C:/Users/15522341/Desktop/somador subtrator/Somador-Subtrator.bdf    ;         ;
 ; display_de_segmentos.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/15522341/Desktop/somador subtrator/display_de_segmentos.bdf ;         ;
+; complemento_de_dois.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/15522341/Desktop/somador subtrator/complemento_de_dois.bdf  ;         ;
 ; somador_completo.bdf             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/15522341/Desktop/somador subtrator/somador_completo.bdf     ;         ;
 +----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------+---------+
 
@@ -182,42 +183,49 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimate of Logic utilization (ALMs needed) ; 17       ;
+; Estimate of Logic utilization (ALMs needed) ; 21       ;
 ;                                             ;          ;
-; Combinational ALUT usage for logic          ; 29       ;
+; Combinational ALUT usage for logic          ; 38       ;
 ;     -- 7 input functions                    ; 0        ;
-;     -- 6 input functions                    ; 4        ;
-;     -- 5 input functions                    ; 1        ;
-;     -- 4 input functions                    ; 21       ;
-;     -- <=3 input functions                  ; 3        ;
+;     -- 6 input functions                    ; 3        ;
+;     -- 5 input functions                    ; 14       ;
+;     -- 4 input functions                    ; 16       ;
+;     -- <=3 input functions                  ; 5        ;
 ;                                             ;          ;
 ; Dedicated logic registers                   ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 34       ;
+; I/O pins                                    ; 41       ;
 ;                                             ;          ;
 ; Total DSP Blocks                            ; 0        ;
 ;                                             ;          ;
 ; Maximum fan-out node                        ; A0~input ;
-; Maximum fan-out                             ; 11       ;
-; Total fan-out                               ; 178      ;
-; Average fan-out                             ; 1.84     ;
+; Maximum fan-out                             ; 13       ;
+; Total fan-out                               ; 231      ;
+; Average fan-out                             ; 1.93     ;
 +---------------------------------------------+----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                              ;
-+----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------+----------------------+--------------+
-; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Entity Name          ; Library Name ;
-+----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------+----------------------+--------------+
-; |Somador-Subtrator               ; 29 (1)              ; 0 (0)                     ; 0                 ; 0          ; 34   ; 0            ; |Somador-Subtrator                             ; Somador-Subtrator    ; work         ;
-;    |display_de_segmentos:inst10| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|display_de_segmentos:inst10 ; display_de_segmentos ; work         ;
-;    |display_de_segmentos:inst8|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|display_de_segmentos:inst8  ; display_de_segmentos ; work         ;
-;    |display_de_segmentos:inst9|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|display_de_segmentos:inst9  ; display_de_segmentos ; work         ;
-;    |somador_completo:inst1|      ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|somador_completo:inst1      ; somador_completo     ; work         ;
-;    |somador_completo:inst2|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|somador_completo:inst2      ; somador_completo     ; work         ;
-;    |somador_completo:inst3|      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|somador_completo:inst3      ; somador_completo     ; work         ;
-;    |somador_completo:inst|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|somador_completo:inst       ; somador_completo     ; work         ;
-+----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------+----------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                    ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Entity Name          ; Library Name ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------+----------------------+--------------+
+; |Somador-Subtrator               ; 38 (4)              ; 0 (0)                     ; 0                 ; 0          ; 41   ; 0            ; |Somador-Subtrator                                                   ; Somador-Subtrator    ; work         ;
+;    |complemento_de_dois:inst19|  ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|complemento_de_dois:inst19                        ; complemento_de_dois  ; work         ;
+;       |somador_completo:inst2|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|complemento_de_dois:inst19|somador_completo:inst2 ; somador_completo     ; work         ;
+;       |somador_completo:inst3|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|complemento_de_dois:inst19|somador_completo:inst3 ; somador_completo     ; work         ;
+;       |somador_completo:inst4|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|complemento_de_dois:inst19|somador_completo:inst4 ; somador_completo     ; work         ;
+;       |somador_completo:inst5|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|complemento_de_dois:inst19|somador_completo:inst5 ; somador_completo     ; work         ;
+;    |complemento_de_dois:inst31|  ; 5 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|complemento_de_dois:inst31                        ; complemento_de_dois  ; work         ;
+;       |somador_completo:inst5|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|complemento_de_dois:inst31|somador_completo:inst5 ; somador_completo     ; work         ;
+;    |display_de_segmentos:inst10| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|display_de_segmentos:inst10                       ; display_de_segmentos ; work         ;
+;    |display_de_segmentos:inst8|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|display_de_segmentos:inst8                        ; display_de_segmentos ; work         ;
+;    |display_de_segmentos:inst9|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|display_de_segmentos:inst9                        ; display_de_segmentos ; work         ;
+;    |somador_completo:inst2|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|somador_completo:inst2                            ; somador_completo     ; work         ;
+;    |somador_completo:inst30|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|somador_completo:inst30                           ; somador_completo     ; work         ;
+;    |somador_completo:inst3|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|somador_completo:inst3                            ; somador_completo     ; work         ;
+;    |somador_completo:inst|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Somador-Subtrator|somador_completo:inst                             ; somador_completo     ; work         ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -241,18 +249,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 30                          ;
-;     normal            ; 30                          ;
+; arriav_lcell_comb     ; 42                          ;
+;     normal            ; 42                          ;
 ;         0 data inputs ; 1                           ;
+;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 1                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 21                          ;
-;         5 data inputs ; 1                           ;
-;         6 data inputs ; 4                           ;
-; boundary_port         ; 34                          ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 16                          ;
+;         5 data inputs ; 14                          ;
+;         6 data inputs ; 3                           ;
+; boundary_port         ; 41                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.15                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.38                        ;
 +-----------------------+-----------------------------+
 
 
@@ -271,33 +280,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Fri Jun 21 20:26:43 2024
+    Info: Processing started: Mon Jun 24 21:08:09 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Somador-Subtrator -c Somador-Subtrator
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file somador-subtrator.bdf
     Info (12023): Found entity 1: Somador-Subtrator
 Info (12127): Elaborating entity "Somador-Subtrator" for the top level hierarchy
-Warning (275043): Pin "sinalResultado" is missing source
 Warning (12125): Using design file display_de_segmentos.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: display_de_segmentos
 Info (12128): Elaborating entity "display_de_segmentos" for hierarchy "display_de_segmentos:inst8"
 Warning (275008): Primitive "NOT" of instance "inst1" not used
+Warning (12125): Using design file complemento_de_dois.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: complemento_de_dois
+Info (12128): Elaborating entity "complemento_de_dois" for hierarchy "complemento_de_dois:inst31"
 Warning (12125): Using design file somador_completo.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: somador_completo
-Info (12128): Elaborating entity "somador_completo" for hierarchy "somador_completo:inst1"
+Info (12128): Elaborating entity "somador_completo" for hierarchy "complemento_de_dois:inst31|somador_completo:inst2"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "sinalResultado" is stuck at GND
+    Warning (13410): Pin "10" is stuck at GND
+    Warning (13410): Pin "11" is stuck at GND
+    Warning (13410): Pin "12" is stuck at GND
+    Warning (13410): Pin "13" is stuck at GND
+    Warning (13410): Pin "14" is stuck at GND
+    Warning (13410): Pin "15" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 63 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 24 output pins
-    Info (21061): Implemented 29 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+Info (21057): Implemented 79 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 30 output pins
+    Info (21061): Implemented 38 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
     Info: Peak virtual memory: 4819 megabytes
-    Info: Processing ended: Fri Jun 21 20:26:51 2024
+    Info: Processing ended: Mon Jun 24 21:08:17 2024
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:18
 
