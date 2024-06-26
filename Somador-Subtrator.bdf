@@ -2188,10 +2188,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 640 648)
 )
 (connector
-	(pt 776 232)
-	(pt 992 232)
-)
-(connector
 	(pt 1192 408)
 	(pt 1168 408)
 )
@@ -2240,28 +2236,12 @@ https://fpgasoftware.intel.com/eula.
 	(pt 912 264)
 )
 (connector
-	(pt 928 256)
-	(pt 824 256)
-)
-(connector
-	(pt 824 256)
-	(pt 824 496)
-)
-(connector
 	(pt 776 496)
 	(pt 824 496)
 )
 (connector
 	(pt 776 248)
 	(pt 896 248)
-)
-(connector
-	(pt 1192 376)
-	(pt 896 376)
-)
-(connector
-	(pt 896 248)
-	(pt 896 376)
 )
 (connector
 	(pt 1192 392)
@@ -2274,18 +2254,6 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 912 240)
 	(pt 912 264)
-)
-(connector
-	(pt 776 512)
-	(pt 1072 512)
-)
-(connector
-	(pt 1072 512)
-	(pt 1072 400)
-)
-(connector
-	(pt 1072 400)
-	(pt 1088 400)
 )
 (connector
 	(pt 912 264)
@@ -2304,34 +2272,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 1392 528)
 )
 (connector
-	(pt 1288 536)
-	(pt 808 536)
-)
-(connector
-	(pt 808 536)
-	(pt 808 528)
-)
-(connector
-	(pt 808 528)
-	(pt 776 528)
-)
-(connector
-	(pt 1392 512)
-	(pt 1384 512)
-)
-(connector
-	(pt 1384 440)
-	(pt 1384 512)
-)
-(connector
-	(pt 952 440)
-	(pt 1384 440)
-)
-(connector
-	(pt 952 440)
-	(pt 952 288)
-)
-(connector
 	(pt 952 288)
 	(pt 856 288)
 )
@@ -2344,28 +2284,12 @@ https://fpgasoftware.intel.com/eula.
 	(pt 856 264)
 )
 (connector
-	(pt 1592 648)
-	(pt 840 648)
-)
-(connector
-	(pt 840 648)
-	(pt 840 280)
-)
-(connector
 	(pt 840 280)
 	(pt 776 280)
 )
 (connector
 	(pt 1552 664)
 	(pt 1592 664)
-)
-(connector
-	(pt 1488 656)
-	(pt 800 656)
-)
-(connector
-	(pt 800 656)
-	(pt 800 544)
 )
 (connector
 	(pt 800 544)
@@ -2400,24 +2324,12 @@ https://fpgasoftware.intel.com/eula.
 	(pt 912 792)
 )
 (connector
-	(pt 1688 808)
-	(pt 872 808)
-)
-(connector
 	(pt 776 560)
 	(pt 872 560)
 )
 (connector
-	(pt 872 560)
-	(pt 872 808)
-)
-(connector
 	(pt 776 296)
 	(pt 936 296)
-)
-(connector
-	(pt 936 296)
-	(pt 936 784)
 )
 (connector
 	(pt 1944 800)
@@ -2454,14 +2366,6 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 1776 920)
 	(pt 1776 784)
-)
-(connector
-	(pt 1792 784)
-	(pt 1776 784)
-)
-(connector
-	(pt 1776 784)
-	(pt 936 784)
 )
 (connector
 	(pt 2224 920)
@@ -2612,20 +2516,132 @@ https://fpgasoftware.intel.com/eula.
 	(pt 2456 1008)
 )
 (connector
-	(pt 2144 920)
-	(pt 2224 920)
-)
-(connector
 	(pt 2168 992)
 	(pt 2184 992)
 )
 (connector
-	(pt 2144 936)
-	(pt 2168 936)
+	(pt 776 232)
+	(pt 880 232)
 )
 (connector
-	(pt 2168 936)
+	(pt 880 232)
+	(pt 880 256)
+)
+(connector
+	(pt 880 256)
+	(pt 928 256)
+)
+(connector
+	(pt 824 224)
+	(pt 824 496)
+)
+(connector
+	(pt 824 224)
+	(pt 984 224)
+)
+(connector
+	(pt 984 224)
+	(pt 984 232)
+)
+(connector
+	(pt 984 232)
+	(pt 992 232)
+)
+(connector
+	(pt 896 400)
+	(pt 896 248)
+)
+(connector
+	(pt 896 400)
+	(pt 1088 400)
+)
+(connector
+	(pt 1184 512)
+	(pt 776 512)
+)
+(connector
+	(pt 1184 512)
+	(pt 1184 376)
+)
+(connector
+	(pt 1184 376)
+	(pt 1192 376)
+)
+(connector
+	(pt 952 536)
+	(pt 952 288)
+)
+(connector
+	(pt 952 536)
+	(pt 1288 536)
+)
+(connector
+	(pt 776 528)
+	(pt 816 528)
+)
+(connector
+	(pt 816 528)
+	(pt 816 504)
+)
+(connector
+	(pt 816 504)
+	(pt 1384 504)
+)
+(connector
+	(pt 1384 504)
+	(pt 1384 512)
+)
+(connector
+	(pt 1384 512)
+	(pt 1392 512)
+)
+(connector
+	(pt 840 280)
+	(pt 840 656)
+)
+(connector
+	(pt 840 656)
+	(pt 1488 656)
+)
+(connector
+	(pt 800 648)
+	(pt 800 544)
+)
+(connector
+	(pt 1592 648)
+	(pt 800 648)
+)
+(connector
+	(pt 936 296)
+	(pt 936 808)
+)
+(connector
+	(pt 936 808)
+	(pt 1688 808)
+)
+(connector
+	(pt 872 784)
+	(pt 872 560)
+)
+(connector
+	(pt 872 784)
+	(pt 1776 784)
+)
+(connector
+	(pt 1776 784)
+	(pt 1792 784)
+)
+(connector
+	(pt 2168 920)
 	(pt 2168 992)
+)
+(connector
+	(pt 2144 920)
+	(pt 2168 920)
+)
+(connector
+	(pt 2168 920)
+	(pt 2224 920)
 )
 (junction (pt 392 544))
 (junction (pt 368 592))
@@ -2645,7 +2661,8 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 912 520))
 (junction (pt 912 672))
 (junction (pt 1760 800))
-(junction (pt 1776 784))
 (junction (pt 2224 920))
 (junction (pt 2456 952))
 (junction (pt 2456 968))
+(junction (pt 1776 784))
+(junction (pt 2168 920))
